@@ -1,0 +1,156 @@
+{
+  "users": [
+    {
+      "id": "u-admin",
+      "name": "ผู้ดูแลระบบ (Admin USE)",
+      "nickname": "Admin",
+      "email": "admin@spumail.net",
+      "password": "123456",
+      "role": "admin",
+      "university": "มหาวิทยาลัยศรีปทุม",
+      "faculty": "ฝ่ายกิจการนักศึกษา",
+      "major": "ระบบดูแลความปลอดภัย",
+      "year": "4",
+      "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&auto=format&fit=crop&q=80",
+      "isVerified": true,
+      "verifiedDomain": "@spumail.net",
+      "badgeText": "Admin",
+      "badgeType": "verified",
+      "xp": 9999,
+      "levelTitle": "System Admin",
+      "exchangeCount": 0,
+      "responseTime": "ตลอด 24 ชม.",
+      "isAvailable": true,
+      "skills": [
+        {
+          "name": "Community Management",
+          "level": "Lv.5",
+          "category": "academic"
+        }
+      ],
+      "portfolioItems": [],
+      "portfolioLinks": {},
+      "contact": {
+        "phone": "02-579-1111",
+        "email": "admin@spumail.net",
+        "lineId": "@use_admin"
+      },
+      "reportCount": 0,
+      "isSuspended": false,
+      "createdAt": "2026-11-10T10:00:00.000Z"
+    },
+    {
+      "id": "u-test1",
+      "name": "กิตติภพ วงศ์สวัสดิ์",
+      "nickname": "ต้น (Test 1)",
+      "email": "test1@spumail.net",
+      "password": "123456",
+      "role": "student",
+      "university": "มหาวิทยาลัยศรีปทุม",
+      "faculty": "คณะเทคโนโลยีสารสนเทศ",
+      "major": "วิทยาการคอมพิวเตอร์และนวัตกรรมซอฟต์แวร์",
+      "year": "3",
+      "picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80",
+      "isVerified": true,
+      "verifiedDomain": "@spumail.net",
+      "badgeText": "Verified",
+      "badgeType": "verified",
+      "xp": 600,
+      "levelTitle": "Lv.2 Skill Explorer",
+      "exchangeCount": 0,
+      "responseTime": "ตอบกลับใน 15 นาที",
+      "isAvailable": true,
+      "skills": [
+        {
+          "name": "Python & Web Dev",
+          "level": "Lv.4",
+          "category": "coding"
+        },
+        {
+          "name": "SQL Database",
+          "level": "Lv.3",
+          "category": "coding"
+        }
+      ],
+      "skillWanted": "UX/UI Design (Figma)",
+      "portfolioItems": [
+        {
+          "id": "port-test1-1",
+          "title": "ระบบเว็บแอปพลิเคชันจัดการตารางเรียนด้วย React & Python",
+          "description": "โปรเจกต์วิชา Software Engineering พัฒนา Full-stack Web App พร้อมเชื่อมต่อ REST API",
+          "tag": "Coding",
+          "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop&q=80"
+        }
+      ],
+      "portfolioLinks": {
+        "githubOrWebsite": "https://github.com/test1-spu"
+      },
+      "contact": {
+        "phone": "081-111-1111",
+        "email": "test1@spumail.net",
+        "lineId": "ton_test1"
+      },
+      "reportCount": 0,
+      "isSuspended": false,
+      "createdAt": "2026-11-10T10:05:00.000Z"
+    },
+    {
+      "id": "u-test2",
+      "name": "พิมพ์ชนก รัตนากร",
+      "nickname": "พิม (Test 2)",
+      "email": "test2@spumail.net",
+      "password": "123456",
+      "role": "student",
+      "university": "มหาวิทยาลัยศรีปทุม",
+      "faculty": "คณะดิจิทัลมีเดีย",
+      "major": "การออกแบบอินเทอร์แอคทีฟและเกม",
+      "year": "3",
+      "picture": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&auto=format&fit=crop&q=80",
+      "isVerified": true,
+      "verifiedDomain": "@spumail.net",
+      "badgeText": "Verified",
+      "badgeType": "verified",
+      "xp": 600,
+      "levelTitle": "Lv.2 Skill Explorer",
+      "exchangeCount": 0,
+      "responseTime": "ตอบกลับใน 15 นาที",
+      "isAvailable": true,
+      "skills": [
+        {
+          "name": "UX/UI Design (Figma)",
+          "level": "Lv.4",
+          "category": "design"
+        },
+        {
+          "name": "ตัดต่อวิดีโอ Premiere Pro",
+          "level": "Lv.4",
+          "category": "music"
+        }
+      ],
+      "skillWanted": "Python & Web Dev",
+      "portfolioItems": [
+        {
+          "id": "port-test2-1",
+          "title": "ออกแบบ UX/UI Mobile App สำหรับนักศึกษาด้วย Figma",
+          "description": "ชนะรางวัลชมเชยการประกวดออกแบบอินเทอร์เฟซระดับมหาวิทยาลัย พร้อม Interactive Prototype",
+          "tag": "Design",
+          "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&auto=format&fit=crop&q=80"
+        }
+      ],
+      "portfolioLinks": {
+        "dribbble": "https://dribbble.com/test2-spu"
+      },
+      "contact": {
+        "phone": "082-222-2222",
+        "email": "test2@spumail.net",
+        "lineId": "pim_test2"
+      },
+      "reportCount": 0,
+      "isSuspended": false,
+      "createdAt": "2026-11-10T10:10:00.000Z"
+    }
+  ],
+  "reviews": [],
+  "requests": [],
+  "reports": []
+}

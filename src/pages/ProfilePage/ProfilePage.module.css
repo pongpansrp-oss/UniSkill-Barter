@@ -1,0 +1,831 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding-bottom: 96px;
+}
+
+.mainContent {
+  padding: 6px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedbackBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 14px;
+  border-radius: 14px;
+  background: var(--success-bg);
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+/* Hero Card */
+.heroCard {
+  background: var(--card-bg);
+  border-radius: 26px;
+  padding: 20px 16px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.verifiedDomainPill {
+  background: var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+
+.avatarContainer {
+  position: relative;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  padding: 4px;
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 12px;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.statusDot {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #22c55e;
+  border: 2.5px solid var(--white);
+}
+
+.statusDotBusy {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #9ca3af;
+  border: 2.5px solid var(--white);
+}
+
+.userName {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.userFaculty {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.userUniversityRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+
+.heroBtnRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.editProfileBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: var(--bg-color);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Quick Shortcuts Row */
+.shortcutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.shortcutCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 12px 14px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  text-align: left;
+}
+
+.shortcutIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.shortcutTitle {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.shortcutSub {
+  font-size: 10.5px;
+  color: var(--text-secondary);
+}
+
+/* Edit Form Card */
+.editFormCard {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--primary-border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editFormHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.editAvatarRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-color);
+  padding: 10px 12px;
+  border-radius: 14px;
+}
+
+.editAvatarPreview {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.uploadAvatarBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.editTwoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.editField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.editField label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.editField input,
+.editField select {
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 0 10px;
+  font-size: 12.5px;
+  background: var(--white);
+  color: var(--text-main);
+}
+
+.saveEditBtn {
+  height: 40px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* 3 Stats Row */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.statCard {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 12px 8px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.statTop {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.statValue {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.statValueText {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.statLabel {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Availability Toggle Card */
+.availCard {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.availLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.availIconCircle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.availTitle {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.availSub {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.toggleSwitch {
+  width: 48px;
+  height: 26px;
+  border-radius: 999px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.toggleOn {
+  background: #e2e4f0;
+  justify-content: flex-end;
+}
+
+.toggleOff {
+  background: #d1d5db;
+  justify-content: flex-start;
+}
+
+.toggleKnob {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 2px 6px rgba(88, 71, 235, 0.4);
+}
+
+/* Section Card */
+.sectionCard {
+  background: var(--card-bg);
+  border-radius: 22px;
+  padding: 16px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardHeaderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTitleGroup {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.addSkillPillBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.inlineAddSkill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.inlineSkillInput {
+  flex: 1;
+  min-width: 140px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.inlineSkillSelect {
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 0 6px;
+  font-size: 12px;
+}
+
+.inlineSkillSaveBtn {
+  padding: 0 12px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.skillsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillPill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+}
+
+.skillDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.skillName {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.skillLevel {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.deleteSkillMini {
+  color: var(--danger);
+  font-size: 11px;
+  margin-left: 2px;
+}
+
+.wantedBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: var(--primary-light);
+  border: 1px solid var(--primary-border);
+  padding: 9px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Portfolio */
+.cardRightCount {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.portfolioFormBox {
+  background: var(--bg-color);
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.featuredProject {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-color);
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.projectLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.projectThumb {
+  width: 64px;
+  height: 54px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.projectTitle {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.projectDesc {
+  font-size: 11px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.projectTag {
+  align-self: flex-start;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-light);
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-top: 2px;
+}
+
+.socialLinksGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.socialLinkCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-color);
+  border-radius: 14px;
+  padding: 10px 12px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.socialIconCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.socialTexts {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.socialName {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.socialHandle {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Private Contacts */
+.privateBadge {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-color);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.contactNotice {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.purpleText {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.contactRows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactRowItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color);
+  border-radius: 14px;
+  padding: 10px 14px;
+  box-shadow: var(--shadow-inset);
+}
+
+.contactLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.contactMaskedVal {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+
+/* Reviews */
+.seeAllReviews {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reviewItem {
+  background: var(--bg-color);
+  border-radius: 16px;
+  padding: 12px 14px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.reviewerInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviewerAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewerName {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.reviewSkill {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.reviewScorePill {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.reviewComment {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.reviewTime {
+  align-self: flex-end;
+  font-size: 10.5px;
+  color: var(--text-muted);
+}
+
+.emptyReviewText {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 12px;
+}
+
+.exportJsonBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+  border: 1px dashed var(--primary-border);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Guest View */
+.guestCard {
+  background: var(--card-bg);
+  border-radius: 24px;
+  padding: 28px 20px;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.guestCard h2 {
+  font-size: 18px;
+  color: var(--text-main);
+}
+
+.guestCard p {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.guestBtnGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.primaryBtn {
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.secondaryBtn {
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--primary-border);
+  font-weight: 600;
+}

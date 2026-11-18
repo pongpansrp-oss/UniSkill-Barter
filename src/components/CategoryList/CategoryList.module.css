@@ -1,0 +1,71 @@
+.categorySection {
+  margin-bottom: 32px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.hint {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.scrollContainer {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  margin: 0 -16px;
+  padding: 0 16px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.pillList {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 8px; /* For hover effects */
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.pill:hover {
+  border-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.pill.active {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--white);
+  border-color: transparent;
+  box-shadow: var(--shadow-purple);
+}
+
+.emoji {
+  font-size: 16px;
+}

@@ -1,0 +1,295 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding-bottom: 96px;
+}
+
+.mainContent {
+  padding: 6px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.walletHero {
+  background: linear-gradient(135deg, #5847eb 0%, #7c69f6 100%);
+  color: var(--white);
+  border-radius: 26px;
+  padding: 20px 18px;
+  box-shadow: var(--shadow-purple);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.walletTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.walletBadge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+}
+
+.walletBalanceRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.creditMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.creditValue {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.creditSub {
+  font-size: 12px;
+  opacity: 0.88;
+  margin-top: 3px;
+}
+
+.xpBox {
+  text-align: right;
+  background: rgba(255, 255, 255, 0.14);
+  padding: 8px 12px;
+  border-radius: 14px;
+}
+
+.xpValue {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.xpSub {
+  font-size: 10.5px;
+  opacity: 0.85;
+}
+
+.progressSection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.progressLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.92;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 999px;
+  background: #fde047;
+  transition: width 0.3s ease;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.statCard {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 12px 10px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+}
+
+.statNum {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.statLabel {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+/* Section Card */
+.sectionCard {
+  background: var(--card-bg);
+  border-radius: 22px;
+  padding: 16px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionTitleGroup {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.badgeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.badgeItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+}
+
+.badgeUnlocked {
+  background: var(--primary-light);
+  border-color: var(--primary-border);
+}
+
+.badgeLocked {
+  opacity: 0.55;
+}
+
+.badgeIcon {
+  font-size: 20px;
+}
+
+.badgeName {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.badgeDesc {
+  font-size: 10.5px;
+  color: var(--text-secondary);
+}
+
+/* Ledger List */
+.ledgerList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ledgerItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--bg-color);
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.ledgerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ledgerIconBox {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ledgerTitle {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.ledgerMeta {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.ledgerRight {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.ledgerPlusCredit {
+  font-size: 12px;
+  font-weight: 800;
+  color: #16a34a;
+}
+
+.ledgerPlusXp {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.emptyText {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 12px;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: var(--shadow-purple);
+}
+

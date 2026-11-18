@@ -1,0 +1,646 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding-bottom: 96px;
+}
+
+.mainContent {
+  padding: 6px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedbackBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+.feedbackSuccess {
+  background: var(--success-bg);
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.feedbackError {
+  background: var(--danger-bg);
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.heroCard {
+  background: var(--card-bg);
+  border-radius: 26px;
+  padding: 20px 16px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.topRowBadges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.verifiedPill {
+  background: var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.availPill {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.busyPill {
+  background: #f3f4f6;
+  color: #6b7280;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.matchScorePill {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid var(--primary-border);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.suspendedBadge {
+  background: var(--danger-bg);
+  color: var(--danger);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.avatarWrap {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  padding: 4px;
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.faculty {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+}
+
+.uniRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 4px 0 16px;
+}
+
+.actionRow {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.requestHelpBtn {
+  flex: 1;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: var(--shadow-purple);
+}
+
+.favIconBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favIconBtnActive {
+  color: #ef4444;
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.reportIconBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  color: var(--danger);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Report Card */
+.reportCard {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 16px;
+  border: 1px solid #fecaca;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reportTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--danger);
+}
+
+.reportSub {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.input {
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  padding: 0 12px;
+  font-size: 12.5px;
+}
+
+.textarea {
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  padding: 10px 12px;
+  font-size: 12.5px;
+}
+
+.formBtns {
+  display: flex;
+  gap: 8px;
+}
+
+.dangerSubmitBtn {
+  flex: 1;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--danger);
+  color: var(--white);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.cancelBtn {
+  padding: 0 14px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--bg-color);
+  color: var(--text-secondary);
+  font-size: 12.5px;
+}
+
+/* Stats */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.statCard {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 12px 8px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.statTop {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.statNum {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.statTextVal {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.statSub {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Section Card */
+.sectionCard {
+  background: var(--card-bg);
+  border-radius: 22px;
+  padding: 16px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.sectionHeaderBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.skillsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillPill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  font-size: 12px;
+}
+
+.skillDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.skillName {
+  font-weight: 600;
+}
+
+.skillLevel {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.wantedBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: var(--primary-light);
+  border: 1px solid var(--primary-border);
+  padding: 9px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Portfolio */
+.portfolioRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-color);
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.portfolioLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.portfolioImg {
+  width: 60px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.portfolioTitle {
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.portfolioDesc {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.portfolioTag {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-light);
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-top: 3px;
+}
+
+.portfolioLinksRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.portfolioLinkChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 12px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Contact Privacy */
+.unlockedBadge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #16a34a;
+  background: #dcfce7;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.lockedBadge {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-color);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.privacyNote {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color);
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.contactRow span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Reviews */
+.writeReviewToggleBtn {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--bg-color);
+  padding: 5px 12px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+}
+
+.reviewForm {
+  background: var(--bg-color);
+  padding: 12px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ruleNotice {
+  font-size: 11.5px;
+  color: #92400e;
+  background: #fef3c7;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.starPickerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.starButtons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.starBtn {
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rateFieldRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rateInput {
+  width: 72px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  padding: 0 8px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.submitReviewBtn {
+  height: 40px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviewItem {
+  background: var(--bg-color);
+  padding: 12px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reviewTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.reviewerInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reviewerAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewerName {
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.reviewSkill {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.reviewRight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.reviewRate {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.adminDeleteBtn {
+  color: var(--danger);
+}
+
+.reviewComment {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.reviewTime {
+  align-self: flex-end;
+  font-size: 10.5px;
+  color: var(--text-muted);
+}
+
+.emptyCard {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primaryBtn {
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* USE Brand & Neumorphic Color Palette */
+  --primary: #5847eb;
+  --primary-hover: #4736d6;
+  --primary-light: #eeecfe;
+  --primary-border: #d7d2fb;
+  --bg-color: #f1f3f8;
+  --card-bg: #f6f7fb;
+  --white: #ffffff;
+  --input-bg: #eef0f6;
+  --text-main: #1c1e26;
+  --text-secondary: #4a5060;
+  --text-muted: #7b8191;
+  --border-color: #e3e6ef;
+  --success: #16a34a;
+  --success-bg: #dcfce7;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --danger-bg: #fee2e2;
+
+  /* Radii */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-pill: 9999px;
+
+  /* Soft Neumorphic & Modern Shadows */
+  --shadow-sm: 0 2px 6px rgba(120, 130, 160, 0.08);
+  --shadow-card: 6px 6px 16px rgba(166, 175, 195, 0.28), -4px -4px 12px rgba(255, 255, 255, 0.9);
+  --shadow-inset: inset 2px 2px 5px rgba(166, 175, 195, 0.25), inset -2px -2px 5px rgba(255, 255, 255, 0.85);
+  --shadow-md: 0 6px 16px rgba(90, 100, 130, 0.1);
+  --shadow-lg: 0 12px 28px rgba(40, 50, 80, 0.12);
+  --shadow-purple: 0 8px 18px rgba(88, 71, 235, 0.25);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kanit', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #e4e8f0;
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* App Frame (Mobile Layout Simulation matching screenshots) */
+#root {
+  max-width: 460px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+}
+
+/* Reusable Neumorphic Card */
+.neu-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.neu-inset {
+  background: var(--input-bg);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-inset);
+}
+
+.neu-pill-btn {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.neu-pill-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
